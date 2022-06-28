@@ -1,0 +1,342 @@
+@charset "UTF-8";
+	*{margin: 0;padding: 0;box-sizing: border-box!important;}
+	html,body{
+		background: #feb72f;
+		/*max-width: 1600px;*/
+		/*height: 100%;*/
+		/*clear: both;*/
+		width: 100%;
+	}
+	html{
+  	overflow-x :  hidden;
+	}
+	/*body::-webkit-scrollbar {*/
+  		/*display: none;*/ /* Chrome, Safari, Opera */
+  		/*-ms-overflow-style: none;*/ /* IE, Edge */
+ 		/* scrollbar-width: none;*/ /* Firefox */
+	/*}*/
+	ul,li{list-style: none;}
+	a{text-decoration: none;}
+	.off{display: none;}
+	#wrap{
+		/*width: 100%;*/
+		/*height: 100%;*/
+		/*background-color: pink;*/
+		width: 100vw;
+		margin: 0 auto;
+		text-align: center;
+	}
+	/*헤더*/
+	header{
+		height: 102px;
+		line-height: 102px;
+		position: relative;
+	}
+	header ul.logo{
+		position: absolute; top:10px; right: 40px;
+	}
+	header ul.logo li{
+		display: inline-block;
+	}
+	header ul.logo img{
+		width: 44px;
+	}
+
+	/*네비게이션*/
+	nav h2{
+		display: none;
+	}
+	nav.fix{
+		position: fixed;top: 0;
+		background-color: #3f000b;
+		z-index: 2;
+	}
+	h2.fix{
+		display: block;
+
+		float: left;
+		padding: 16px 30px;
+		position: absolute;left:0;
+	}
+	nav.fix .gnb{
+		/*width: 100%;*/
+		height: 86px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	nav{
+		width: 100%;
+		/*width: 1600px;*/
+		height: 86px;
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		z-index: 1;
+
+		transition: all 0.3s;
+	}
+	nav:hover{
+		background-color: #3f000b;
+	}
+	nav .gnb{
+		/*width: 100%;*/
+		height: 86px;
+		display: inline-block;
+		margin: 0 auto;
+	}
+	nav .gnb>li{
+		float: left;
+	}
+	.gnb>li>a{
+		padding: 20px 30px;
+		font-size: 25px;
+		line-height: 86px;
+		color: #feb72f;
+		font-family: 'Oswald', sans-serif;
+	}
+	.gnb>li>a:hover{
+		color: #fff;
+	}
+	.submenu{
+		display: none;
+
+		background-color: #3f000b;
+	}
+	.submenu li a{
+		display: block;
+		padding: 10px 30px;
+		font-size: 20px;
+		color: white;
+	}
+	.submenu li a:hover{
+		background-color: #e2cead;
+		color: #3f000b;
+		font-weight: bold;
+	}
+
+	/*메인*/
+	.sec1{
+		width: 100%;
+		height: 100vh;
+		/*height: 647px;*/
+	}
+	.font{
+		color: #3f000b;
+		font-weight: bold;
+		font-size: 40px;
+	}
+	.btn{
+		margin: 20px;
+		box-sizing: border-box;
+
+		font-size: 30px;
+		width: 251px; line-height: 60px;
+		background: #fff;
+		border: 10px solid #3f000b;
+
+		cursor: pointer;
+	}
+	.sec1 .mainImg{
+		margin: 0 auto;
+		width: 100%;
+		height: 100vh;
+		/*height: 647px;*/
+		background-image: url("../img/main_bg.png");
+		background-size: 100%;
+		background-position: 100% 40%;
+		background-repeat: no-repeat;
+	}
+	.sec1 p{
+		text-align: left;
+
+		position: absolute;left:10%; top: 70%;
+	}
+	.sec2{
+		/*height: 1600px;*/
+	}
+	.sec2 article{
+		/*flex-basis: 0;*/
+		width: 100%; height: 100vh;
+		/*height: 100vh;*/
+		display: flex;
+		flex-grow: 1;
+	}
+	.sec2 article .imgWrap{
+		flex: 1;
+		/*height: 800px;*/
+		height: 100%;
+		/*overflow: hidden;*/
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+	}
+	.sec2 article .imgWrap:nth-child(1){
+		background-image: url("../img/Hershey's Chocolate Cake copy.jpg");
+	}
+	.sec2 article .imgWrap:nth-child(2){
+		background-image: url("../img/Fresh Milk.jpg");
+	}
+	.sec2 article .text{
+		flex: 1;
+		width: 750px;
+		/*height: 800px;*/
+		height: 100vh;
+		box-sizing: border-box;
+		padding-top: 300px;
+		/*background: red;*/
+	}
+	.sec3{
+		margin: 0 auto;
+		height: 100vh;
+		position: relative;
+
+		display: flex;
+		/*flex-direction: column;*/
+		/*text-align: center;*/
+		/*justify-content: center;*/
+	}
+	.sec3 div.ulWrap{
+		width: 100%;
+		height: 100vh;
+		/*position: absolute;top: 50%;left: 50%;
+		transform: translate(-50%, -50%);*/
+
+		display: flex;
+		background: #333;
+	}
+	.sec3 ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+
+		/*transition: opacity 1.5s,transform 1.5s;*/
+	}
+	.sec3 ul li{
+		width: 100%;
+		height: 148px;
+
+		display: flex;
+		justify-content: center;
+	}
+	.sec3 ul li a{
+		/*width: 100%;*/
+		color: #fff;
+		font-size: 122px;
+		font-family: 'Cormorant Unicase', serif;
+
+		position: absolute;
+		z-index: 1;
+	}
+	.sec3 ul li.active:before{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	.sec3 ul li.active a{
+		opacity: 1;
+		transition: all 0.5s;
+		transform: none;
+		color: #feb72f;
+	}
+	.sec3 ul li:before{
+		content: "";
+		opacity: 0;
+
+		position: absolute; top: 0;left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.sec3 ul li.menu1.active:before{
+		background-image: url("../img/company_black.png");
+	}
+	.sec3 ul li.menu2.active:before{
+		background-image: url("../img/process_black.png");
+	}
+	.sec3 ul li.menu3.active:before{
+		background-image: url("../img/product_black.png");
+	}
+	.sec3 ul li.menu4.active:before{
+		background-image: url("../img/event_black.png");
+	}
+	/*.sec3 ul li a:hover{
+		color: #feb72f;
+	}
+	스크립트로 마우스오버시 .active 클래스 활성화 하는거로,,*/
+	.sec4{
+		height: 285px;
+		position: relative;
+	}
+	.sec4 div.brand{
+		display: flex;
+		/*overflow: hidden;*/
+		width: 100%;
+		height: 285px;
+		position: absolute; left: 0;
+	}
+	.sec4 ul{
+		display: flex;
+	}
+	.sec4 ul>li>a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.sec4 img{
+		/*width: 33.333%;*/
+		height: 100%;
+	}
+	.hrBox{
+		width: 100%;
+		height: 100px;
+		background: #3f000b;
+	}
+	.hrBox h1 img{
+		float: left;
+		margin-top: 26px;
+		margin-left: 96px;
+	}
+
+	/*푸터*/
+	footer ul{
+		float: left;
+		text-align: left;
+		margin: 50px 96px;
+	}
+	footer ul li a{
+		display: block;
+		padding: 10px;
+		color: #3f000b;
+	}
+	footer ul li a:hover{
+		font-weight: bold;
+	}
+	footer div{
+		float: right;
+		text-align: right;
+		margin: 50px 96px;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	footer div address{
+		font-style: normal;
+	}
+	footer .hr{
+		margin: 10px 0;
+		float: right;
+		width: 540px;
+		height: 1px;
+		background: #3f000b;
+	}
+	footer p{
+		font-weight: bold;
+	}
+
+	/*탑버튼*/
+	div.top{
+		display: none;
+
+		position: fixed;bottom: 40px;right: 40px;
+	}
